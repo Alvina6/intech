@@ -1,0 +1,286 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    overflow: auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    /* Vertically align elements */
+    justify-content: space-between;
+    /* Space out elements horizontally */
+    padding: 20px;
+    background-color: black;
+    /* Dark background for the header */
+    color: black;
+    position: sticky;
+    /* Sticks at the top during scroll */
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+}
+
+/* Title Styling */
+.headertitle {
+    padding: 0px 20px;
+    margin: 0;
+    font-size: 2.5rem;
+    color: white;
+    font-weight: bold;
+    font-family: system-ui;
+}
+
+/* Navigation Bar */
+.navsubtitles {
+    display: flex;
+    align-items: center;
+    /* Vertically aligns the nav items */
+}
+
+.navbar {
+    display: flex;
+    list-style: none;
+    /* Remove default list styles */
+    margin: 0;
+    padding: 0;
+    gap: 30px;
+    /* Space between navigation items */
+}
+
+.navbar li {
+    margin: 0;
+}
+
+.navbar a {
+    text-decoration: none;
+    /* Remove underline */
+    color: rgb(227, 213, 213);
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+    /* Smooth hover effect */
+}
+
+.navbar a:hover {
+    color: #a5c4db;
+    /* Change color on hover */
+}
+
+/* For small screens */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+
+
+/* Background Section */
+.blackbaground {
+    width: 100%;
+    height: 200px;
+    background-color: black;
+}
+
+/* Center the Image Dynamically */
+.imageback {
+    display: flex;
+    justify-content: center;
+    margin-top: -150px;
+}
+
+.imageback img {
+    height: 260px;
+    max-width: 100%;
+    border-radius: 15px;
+    /* Optional: Add rounded corners */
+}
+
+/* Content Positioning */
+.imagecontent {
+    text-align: center;
+    padding: 20px;
+    margin: 0 15%;
+    /* Adds margin on both sides */
+}
+
+.imgheading {
+    font-weight: bold;
+    color: rgb(44, 35, 35);
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.imgsubcontent {
+    font-size: 1.1rem;
+    color: rgb(68, 68, 68);
+    line-height: 1.6;
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+    .imageback img {
+        height: auto;
+        width: 80%;
+        /* Adjusts image size on smaller screens */
+    }
+
+    .imagecontent {
+        padding: 10px;
+        margin: 0 5%;
+    }
+}
+
+.missionsec {
+    margin: 60px 123px;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+
+.missioncontent {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 30px;
+    background-color: #dbeaf5;
+    line-height: 1.6;
+    font-weight: 400;
+    border-radius: 8px;
+    /* Optional: Adds rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Optional: Adds subtle shadow */
+}
+
+.missionsec img {
+    height: 305px;
+    width: auto;
+    /* Ensures aspect ratio is maintained */
+    border-radius: 8px;
+    /* Optional: Adds rounded corners */
+}
+
+.expertise {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    /* max-width: 80%; */
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    padding: 0px 0px 0px 20px;
+}
+
+.image-container img {
+    width: 96%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+    filter: blur(5px);
+    /* Blurs the video */
+    -webkit-filter: blur(5px);
+    margin: 20px;
+
+}
+
+
+.overlay-text {
+    margin: 0px 34px;
+    position: absolute;
+    top: 20%;
+    color: rgb(20, 19, 19);
+    text-align: center;
+    padding: 19px;
+    border-radius: 10px;
+}
+
+.overlay-text h2 {
+    margin: 0 0 10px 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.overlay-text p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.mission {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    margin: 34px auto 80px;
+    max-width: 80%;
+    background-color: rgb(247 247 247 / 90%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 20px;
+    font-weight: 700;
+    line-height: 1.5;
+
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgb(20, 20, 20);
+    color: aliceblue;
+    text-align: center;
+    gap: 15px;
+    border-top: 3px solid rgb(93, 90, 86);
+    margin-top: 50px;
+}
+
+/* Footer heading */
+.footerheading {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+/* Footer list styling */
+.footerlist ul {
+    display: flex;
+    flex-wrap: wrap;
+    /* Wraps items on small screens */
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Styling for the links */
+.footerlist a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #a5c4db;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect for links */
+.footerlist a:hover {
+    color: #ffffff;
+}

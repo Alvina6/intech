@@ -1,0 +1,375 @@
+/* Reset margins and paddings */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    /* Allows scrolling */
+}
+
+/* Background container for the video */
+.background {
+    position: relative;
+    /* Allows the video to scroll with the page */
+    width: 100%;
+    height: 100%;
+    /* Full height for the video */
+}
+
+/* Video settings */
+video {
+    width: 100%;
+    height: 90vh;
+    /* Full viewport height */
+    object-fit: cover;
+    filter: blur(5px);
+    /* Blurs the video */
+    -webkit-filter: blur(5px);
+    /* For Safari support */
+    /* Ensures video covers the entire viewport */
+}
+
+/* Content styling */
+
+
+.videocontent {
+    position: absolute;
+    top: 65%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2;
+    color: white;
+
+    /* Semi-transparent background for better readability */
+    padding: 20px;
+
+}
+
+.videocontent h2 {
+    font-size: 3rem;
+    font-weight: bolder;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: black;
+}
+
+
+.videocontent h1 {
+    font-size: 5rem;
+    font-weight: 1000;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+
+h1 {
+    font-size: 3rem;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+/* General Reset */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    align-items: center;
+    /* Vertically align elements */
+    justify-content: space-between;
+    /* Space out elements horizontally */
+    padding: 20px;
+    background-color: #dfdede;
+    /* Dark background for the header */
+    color: white;
+    position: sticky;
+    /* Sticks at the top during scroll */
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+}
+
+/* Title Styling */
+.headertitle {
+    padding: 0px 20px;
+    margin: 0;
+    font-size: 2.5rem;
+    color: black;
+    font-weight: bold;
+    font-family: system-ui;
+}
+
+/* Navigation Bar */
+.navsubtitles {
+    display: flex;
+    align-items: center;
+    /* Vertically aligns the nav items */
+}
+
+.navbar {
+    display: flex;
+    list-style: none;
+    /* Remove default list styles */
+    margin: 0;
+    padding: 0;
+    gap: 30px;
+    /* Space between navigation items */
+}
+
+.navbar li {
+    margin: 0;
+}
+
+.navbar a {
+    text-decoration: none;
+    /* Remove underline */
+    color: rgb(12, 12, 12);
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+    /* Smooth hover effect */
+}
+
+.navbar a:hover {
+    color: #a5c4db;
+    /* Change color on hover */
+}
+
+/* For small screens */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+.boxofoffer {
+    display: flex;
+    flex-direction: row;
+    gap: 128px;
+    align-items: center;
+    margin: auto;
+    width: 90%;
+    background: rgb(185 182 182 / 50%);
+    padding: 20px;
+    border-radius: 10px;
+
+}
+
+.whatoffers {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: lightslategray;
+    font-size: 1rem;
+}
+
+.imageofoffer {
+    flex: 1;
+}
+
+.imageofoffer img {
+
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Responsiveness for smaller screens */
+@media (max-width: 768px) {
+    .boxofoffer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imageofoffer img {
+        max-width: 100%;
+    }
+}
+
+.offertitle {
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+
+}
+
+.offercontent {
+    font-weight: 300;
+    font-size: larger;
+}
+
+.worktitle {
+    text-align: center;
+    font-weight: bold;
+    color: rgb(44, 35, 35);
+    padding: 50px 20px 20px;
+}
+
+.workbox {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    align-items: center;
+    margin: 0px 70px 70px;
+}
+
+.inovations {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: honeydew;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+    margin: 10px 20px 10px 20px;
+
+}
+
+.inovation {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: honeydew;
+    padding: 20px 51px 20px 40px;
+    align-items: center;
+    text-align: center;
+    margin: 10px 20px 10px 20px;
+
+}
+
+.inovationtitle {
+    margin: 20px 10px 0px 0px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #056379
+}
+
+.inovationcontent {
+    font-weight: 500;
+    font-family: inherit;
+    color: #2c85a1;
+    margin: 5px;
+}
+
+/* General footer styles */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgb(45, 45, 45);
+    color: aliceblue;
+    text-align: center;
+    gap: 15px;
+    border-top: 3px solid rgb(93, 90, 86);
+    opacity: 0;
+    /* Initially hidden */
+    animation: fadeIn 3s ease-in-out forwards;
+    /* Fade-in animation */
+    margin: 50px 0px 0px 0px;
+}
+
+/* Footer heading */
+.footerheading {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 10px 0;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+/* Footer list styling */
+.footerlist {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 0;
+}
+
+/* Styling for the unordered list in footer */
+.footerlist ul {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Styling for the links */
+.footerlist a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #a5c4db;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect for links */
+.footerlist a:hover {
+    color: #ffffff;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.aboutbtn {
+    margin: 10px;
+    background-color: #d5af8b;
+    color: #313f3d;
+    padding: 20px;
+    border: none;
+
+}
+
+.aboutbtn:hover {
+    background-color: #e6d1be;
+    color: #4e4141;
+}
+
+.porfoliobtndiv {
+    text-align: center;
+    margin: -23px 15px 20px 18px;
+}
+
+.porfoliobtn {
+    margin: 26px;
+    background-color: darkseagreen;
+    padding: 20px;
+    border: none;
+    color: aliceblue;
+}
+
+.porfoliobtndiv :hover {
+    background-color: rgb(158, 188, 158);
+    color: rgb(230, 234, 237);
+    font-weight: 400;
+    cursor: pointer;
+}
