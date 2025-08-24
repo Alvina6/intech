@@ -34,14 +34,8 @@ frontend/
 ## Setup Instructions
 1. Clone the repository:
 ```bash
-git clone [your-repository-url]
-```
-
-2. Navigate to the project directory:
-```bash
-cd [project-directory]
-```
-
+git clone 
+```https://github.com/Alvina6/intech.git
 3. Open `index.html` in a web browser to view the website
 
 ## Browser Compatibility
@@ -55,12 +49,4 @@ cd [project-directory]
 2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
 3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## Contact
-- Website: [Your website URL]
-- Email: support@intech.com
-- LinkedIn: [Your LinkedIn URL]
-
-## License
-This project is licensed under the MIT License - see the LICENSE.md file for details
+5. Open a Pull Request.
